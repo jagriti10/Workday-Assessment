@@ -2,12 +2,12 @@
 <testng-results ignored="12" total="17" passed="1" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-03-30T16:58:57 IST" name="Workday Test Suite" finished-at="2020-03-30T17:00:12 IST" duration-ms="74607">
+  <suite started-at="2020-03-30T17:18:25 IST" name="Workday Test Suite" finished-at="2020-03-30T17:19:42 IST" duration-ms="77608">
     <groups>
     </groups>
-    <test started-at="2020-03-30T16:58:57 IST" name="Workday Test Cases" finished-at="2020-03-30T17:00:12 IST" duration-ms="74607">
+    <test started-at="2020-03-30T17:18:25 IST" name="Workday Test Cases" finished-at="2020-03-30T17:19:42 IST" duration-ms="77608">
       <class name="TestCases.rememberDeviceTest">
-        <test-method signature="checkClickAndSubmit()[pri:0, instance:TestCases.rememberDeviceTest@19d481b]" started-at="2020-03-30T17:00:11 IST" name="checkClickAndSubmit" finished-at="2020-03-30T17:00:11 IST" duration-ms="5" status="FAIL">
+        <test-method signature="checkClickAndSubmit()[pri:0, instance:TestCases.rememberDeviceTest@19d481b]" started-at="2020-03-30T17:19:41 IST" name="checkClickAndSubmit" finished-at="2020-03-30T17:19:41 IST" duration-ms="5" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -48,7 +48,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- checkClickAndSubmit -->
       </class> <!-- TestCases.rememberDeviceTest -->
       <class name="TestCases.personalInfoTest">
-        <test-method signature="isPersonalInfoClicked()[pri:1, instance:TestCases.personalInfoTest@140c9f39]" started-at="2020-03-30T17:00:11 IST" name="isPersonalInfoClicked" finished-at="2020-03-30T17:00:11 IST" duration-ms="7" status="FAIL">
+        <test-method signature="isPersonalInfoClicked()[pri:1, instance:TestCases.personalInfoTest@140c9f39]" started-at="2020-03-30T17:19:41 IST" name="isPersonalInfoClicked" finished-at="2020-03-30T17:19:41 IST" duration-ms="11" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -89,7 +89,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- isPersonalInfoClicked -->
       </class> <!-- TestCases.personalInfoTest -->
       <class name="TestCases.addCommentTest">
-        <test-method signature="isCommentAdded()[pri:1, instance:TestCases.addCommentTest@4d910fd6]" started-at="2020-03-30T17:00:11 IST" name="isCommentAdded" finished-at="2020-03-30T17:00:11 IST" duration-ms="7" status="FAIL">
+        <test-method signature="isCommentAdded()[pri:1, instance:TestCases.addCommentTest@4d910fd6]" started-at="2020-03-30T17:19:41 IST" name="isCommentAdded" finished-at="2020-03-30T17:19:41 IST" duration-ms="11" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException
@@ -130,25 +130,25 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- isCommentAdded -->
       </class> <!-- TestCases.addCommentTest -->
       <class name="TestCases.signInTest">
-        <test-method is-config="true" signature="beforesuit()[pri:0, instance:TestCases.signInTest@51f116b8]" started-at="2020-03-30T16:58:57 IST" name="beforesuit" finished-at="2020-03-30T16:58:57 IST" duration-ms="34" status="PASS">
+        <test-method is-config="true" signature="beforesuit()[pri:0, instance:TestCases.signInTest@51f116b8]" started-at="2020-03-30T17:18:25 IST" name="beforesuit" finished-at="2020-03-30T17:18:25 IST" duration-ms="30" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforesuit -->
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:TestCases.signInTest@51f116b8]" started-at="2020-03-30T16:58:57 IST" name="beforeTest" finished-at="2020-03-30T16:59:07 IST" duration-ms="9731" status="PASS">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:TestCases.signInTest@51f116b8]" started-at="2020-03-30T17:18:25 IST" name="beforeTest" finished-at="2020-03-30T17:18:36 IST" duration-ms="11664" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="isEmailDisplayed()[pri:1, instance:TestCases.signInTest@51f116b8]" started-at="2020-03-30T16:59:07 IST" name="isEmailDisplayed" finished-at="2020-03-30T17:00:11 IST" duration-ms="63931" status="PASS">
+        <test-method signature="isEmailDisplayed()[pri:1, instance:TestCases.signInTest@51f116b8]" started-at="2020-03-30T17:18:37 IST" name="isEmailDisplayed" finished-at="2020-03-30T17:19:41 IST" duration-ms="64756" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isEmailDisplayed -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestCases.signInTest@51f116b8]" started-at="2020-03-30T17:00:11 IST" name="afterTest" finished-at="2020-03-30T17:00:12 IST" duration-ms="819" status="PASS">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestCases.signInTest@51f116b8]" started-at="2020-03-30T17:19:41 IST" name="afterTest" finished-at="2020-03-30T17:19:42 IST" duration-ms="981" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- TestCases.signInTest -->
       <class name="TestCases.mainPageTest">
-        <test-method signature="checkUser()[pri:1, instance:TestCases.mainPageTest@1f97cf0d]" started-at="2020-03-30T17:00:11 IST" name="checkUser" finished-at="2020-03-30T17:00:11 IST" duration-ms="8" status="FAIL">
+        <test-method signature="checkUser()[pri:1, instance:TestCases.mainPageTest@1f97cf0d]" started-at="2020-03-30T17:19:41 IST" name="checkUser" finished-at="2020-03-30T17:19:41 IST" duration-ms="11" status="FAIL">
           <exception class="java.lang.NullPointerException">
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException

@@ -8,7 +8,7 @@ import TestCases.testBase;
 import configurations.driverFunction;
 
 public class rememberDevice extends rememberDeviceOR {
-	WebDriver driver;
+	WebDriver driver=null;
 	driverFunction driverFunc;
 	
 	public rememberDevice(WebDriver driver) {
@@ -17,7 +17,8 @@ public class rememberDevice extends rememberDeviceOR {
 		driverFunc = testBase.getdriverFunction();
 	}
 	
-	public mainPage clickAndsubmit() {
+	public mainPage clickAndsubmit() throws InterruptedException {
+		Thread.sleep(5000);
 		driverFunc.click(checkbox);
 		driverFunc.addWait();
 		driverFunc.click(submit);
