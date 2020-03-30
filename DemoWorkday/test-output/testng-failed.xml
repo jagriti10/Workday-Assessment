@@ -22,14 +22,6 @@
           <include name="beforeTest"/>
         </methods>
       </class> <!-- TestCases.personalInfoTest -->
-      <class name="TestCases.signInTest">
-        <methods>
-          <include name="isEmailDisplayed"/>
-          <include name="beforesuit"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- TestCases.signInTest -->
       <class name="TestCases.mainPageTest">
         <methods>
           <include name="beforesuit"/>
@@ -38,6 +30,14 @@
           <include name="beforeTest"/>
         </methods>
       </class> <!-- TestCases.mainPageTest -->
+      <class name="TestCases.rememberDeviceTest">
+        <methods>
+          <include name="checkClickAndSubmit"/>
+          <include name="beforesuit"/>
+          <include name="afterTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- TestCases.rememberDeviceTest -->
     </classes>
   </test> <!-- Workday Test Cases(failed) -->
 </suite> <!-- Failed suite [Workday Test Suite] -->

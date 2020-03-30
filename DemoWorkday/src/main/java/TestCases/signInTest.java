@@ -9,10 +9,10 @@ public class signInTest extends testBase {
 
 	@Test(priority=1)
 	public void isEmailDisplayed() throws InterruptedException {
-		mp=si.login(loadProp.getProp().getProperty("email"),
+		rm=si.login(loadProp.getProp().getProperty("email"),
 				loadProp.getProp().getProperty("password"));
 		
-		Assert.assertTrue(mp!=null);
+		Assert.assertTrue(rm!=null);
 	}
 	
 

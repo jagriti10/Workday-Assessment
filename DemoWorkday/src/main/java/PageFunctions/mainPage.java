@@ -2,8 +2,6 @@ package PageFunctions;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
-
 import ObjectRepo.mainPageOR;
 import TestCases.testBase;
 import configurations.driverFunction;
@@ -17,11 +15,10 @@ public class mainPage extends mainPageOR {
 		PageFactory.initElements(driver,this);
 		driverFunc=testBase.getdriverFunction();
 	}
-
-	public String checkLogin() {
+	public String getHeader() {
 		return header.getText();
-	 
 	}
+	
 	public personalInfo clickPersonalInfo() {
 		driverFunc.click(piImage);
 		driverFunc.addWait();

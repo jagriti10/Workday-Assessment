@@ -10,6 +10,7 @@
 	<test name="Workday Test Cases">
 		<classes>
 			<class name="TestCases.signInTest"></class>
+			<class name="TestCases.rememberDeviceTest"></class>
 			<class name="TestCases.mainPageTest"></class>
 			<class name="TestCases.personalInfoTest"></class>
 			<class name="TestCases.addCommentTest"></class>

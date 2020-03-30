@@ -1,17 +1,14 @@
 package TestCases;
 
 import java.io.IOException;
-import java.lang.reflect.Method;
-
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.BeforeTest;
 
 import PageFunctions.addComment;
 import PageFunctions.mainPage;
 import PageFunctions.personalInfo;
+import PageFunctions.rememberDevice;
 import PageFunctions.signIn;
 import configurations.driverFunction;
 import configurations.loadProp;
@@ -20,6 +17,7 @@ import configurations.startDriver;
 public class testBase {
 	startDriver s;
 	protected addComment ac;
+	protected rememberDevice rm;
 	protected mainPage mp;
 	protected personalInfo pi;
 	protected signIn si;

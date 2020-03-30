@@ -1,7 +1,5 @@
 package PageFunctions;
 
-import java.util.concurrent.TimeUnit;
-
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.support.PageFactory;
 import configurations.driverFunction;
@@ -23,7 +21,7 @@ public class signIn extends signInOR{
 	
 	}
 	
-	public mainPage login(String username, String password) throws InterruptedException {
+	public rememberDevice login(String username, String password) throws InterruptedException {
 		
 		driverFunc.enterValues(email,username);
 		driverFunc.addWait();
@@ -32,8 +30,8 @@ public class signIn extends signInOR{
 		driverFunc.enterValues(passwd,password);
 		driverFunc.addWait();
 		driverFunc.click(next2);
-		driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
-	    return new mainPage(driver);
+		Thread.sleep(60000);
+	    return new rememberDevice(driver);
 	}
 	 
 	
