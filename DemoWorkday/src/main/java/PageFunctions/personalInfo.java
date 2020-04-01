@@ -8,19 +8,18 @@ import TestCases.testBase;
 import configurations.driverFunction;
 
 public class personalInfo extends personalInfoOR {
-	WebDriver driver=null;
+	WebDriver driver;
 	driverFunction driverFunc;
-
+	addComment ac=new addComment(driver);
 	
 	public personalInfo(WebDriver driver) {
 		super(driver);
-		PageFactory.initElements(driver,this);
 		driverFunc=testBase.getdriverFunction();
 	}
 	
 	public addComment clickPers() {
-		driverFunc.click(changePi);
-		return new addComment(driver);
+		driverFunc.doubleClick(changePi);
+		return ac;
 	}
 
 	}

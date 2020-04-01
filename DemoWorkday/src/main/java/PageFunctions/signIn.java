@@ -10,15 +10,14 @@ import TestCases.testBase;
 
 public class signIn extends signInOR{
 	
-	WebDriver driver=null; 
+	WebDriver driver; 
 	driverFunction driverFunc;
+	rememberDevice rm=new rememberDevice(driver);
 	
 	public signIn(WebDriver driver) {
 	
 			super(driver);
-			PageFactory.initElements(driver, this);
 			driverFunc = testBase.getdriverFunction();
-	
 	}
 	
 	public rememberDevice login(String username, String password) throws InterruptedException {
@@ -30,8 +29,8 @@ public class signIn extends signInOR{
 		driverFunc.enterValues(passwd,password);
 		driverFunc.addWait();
 		driverFunc.click(next2);
-		Thread.sleep(60000);
-	    return new rememberDevice(driver);
+		Thread.sleep(10000);
+	    return rm;
 	}
 	 
 	

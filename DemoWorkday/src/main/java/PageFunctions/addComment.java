@@ -8,12 +8,11 @@ import TestCases.testBase;
 import configurations.driverFunction;
 
 public class addComment extends addCommentOR{
-	WebDriver driver=null;
+	WebDriver driver;
 	driverFunction driverFunc;
 	
 	public addComment(WebDriver driver) {
 		super(driver);
-		PageFactory.initElements(driver,this);
 		driverFunc=testBase.getdriverFunction();
 	}
 	

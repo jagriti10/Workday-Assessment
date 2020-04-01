@@ -32,10 +32,6 @@ public class testBase {
 		testBase.driverFunc = driverFunc;
 	}
 
-	@BeforeSuite
-	public void beforesuit() {
-		
-	}
 	
 	@BeforeTest
 	public void beforeTest() {

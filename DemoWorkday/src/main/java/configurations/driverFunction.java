@@ -4,10 +4,11 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.interactions.Actions;
 
 public class driverFunction {
-	@SuppressWarnings("unused")
-	private WebDriver driver=null;
+
+	private WebDriver driver;
 
 	public driverFunction(WebDriver driver) {
 		super();
@@ -31,7 +32,17 @@ public class driverFunction {
 		}
 	}
 	
+	public void doubleClick(WebElement ele) {
+		try {
+			Actions action = new Actions(driver).doubleClick(ele);
+			action.build().perform();
+			System.out.println("Double clicked the element");}
+		catch(Exception e) {
+			System.out.print(e.getMessage());
+		}
+		}
+		
 	public void addWait() {
-		driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
+		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	}
 }

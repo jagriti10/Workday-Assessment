@@ -3,14 +3,15 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestCases.personalInfoTest">
+      <class name="TestCases.workdayTestCase">
         <methods>
           <include name="isPersonalInfoClicked"/>
-          <include name="beforesuit"/>
           <include name="afterTest"/>
+          <include name="isCommentAdded"/>
+          <include name="checkUser"/>
           <include name="beforeTest"/>
         </methods>
-      </class> <!-- TestCases.personalInfoTest -->
+      </class> <!-- TestCases.workdayTestCase -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

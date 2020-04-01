@@ -1,28 +1,33 @@
 package PageFunctions;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.PageFactory;
+import org.testng.Assert;
+
 import ObjectRepo.mainPageOR;
 import TestCases.testBase;
 import configurations.driverFunction;
 
 public class mainPage extends mainPageOR {
-	WebDriver driver=null;
+	WebDriver driver;
 	driverFunction driverFunc;
+	personalInfo pi=new personalInfo(driver);
 
 	public mainPage(WebDriver driver) {
 		super(driver);
-		PageFactory.initElements(driver,this);
-		driverFunc=testBase.getdriverFunction();
+		driverFunc=testBase.getdriverFunction(); 
 	}
-	public String getHeader() {
-		return header.getText();
+	public String fetchHeader() {
+		driverFunc.addWait();
+		return welcomeCard.getText();
+	
 	}
 	
 	public personalInfo clickPersonalInfo() {
-		driverFunc.click(piImage);
+		driverFunc.doubleClick(piImage);
 		driverFunc.addWait();
-		return new personalInfo(driver);
+		return pi;
 	}
 
 	

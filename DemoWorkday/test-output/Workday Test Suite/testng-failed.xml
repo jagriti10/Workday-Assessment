@@ -6,38 +6,15 @@
   </listeners>
   <test thread-count="5" name="Workday Test Cases(failed)">
     <classes>
-      <class name="TestCases.addCommentTest">
-        <methods>
-          <include name="isCommentAdded"/>
-          <include name="beforesuit"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- TestCases.addCommentTest -->
-      <class name="TestCases.personalInfoTest">
+      <class name="TestCases.workdayTestCase">
         <methods>
           <include name="isPersonalInfoClicked"/>
-          <include name="beforesuit"/>
           <include name="afterTest"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- TestCases.personalInfoTest -->
-      <class name="TestCases.mainPageTest">
-        <methods>
-          <include name="beforesuit"/>
-          <include name="afterTest"/>
+          <include name="isCommentAdded"/>
           <include name="checkUser"/>
           <include name="beforeTest"/>
         </methods>
-      </class> <!-- TestCases.mainPageTest -->
-      <class name="TestCases.rememberDeviceTest">
-        <methods>
-          <include name="checkClickAndSubmit"/>
-          <include name="beforesuit"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- TestCases.rememberDeviceTest -->
+      </class> <!-- TestCases.workdayTestCase -->
     </classes>
   </test> <!-- Workday Test Cases(failed) -->
 </suite> <!-- Failed suite [Workday Test Suite] -->

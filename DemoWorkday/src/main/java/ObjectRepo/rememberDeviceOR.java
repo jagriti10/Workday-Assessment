@@ -12,10 +12,10 @@ public class rememberDeviceOR {
 		PageFactory.initElements(driver,this);
 	}
 	
-	@FindBy(id="tdCheckbox")
-	protected WebElement checkbox;
+//	@FindBy(id="tdCheckbox")
+//	protected WebElement checkbox;
 	
-	@FindBy(xpath="//button[@data-automation-id='button']")
-	protected WebElement submit;
+	@FindBy(xpath="//button[@data-automation-id='linkButton']")
+	protected WebElement skip;
 	
 }
