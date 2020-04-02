@@ -10,7 +10,6 @@ import TestCases.testBase;
 
 public class signIn extends signInOR{
 	
-	WebDriver driver; 
 	driverFunction driverFunc;
 	rememberDevice rm=new rememberDevice(driver);
 	
@@ -29,7 +28,7 @@ public class signIn extends signInOR{
 		driverFunc.enterValues(passwd,password);
 		driverFunc.addWait();
 		driverFunc.click(next2);
-		Thread.sleep(10000);
+		driverFunc.sleep();
 	    return rm;
 	}
 	 

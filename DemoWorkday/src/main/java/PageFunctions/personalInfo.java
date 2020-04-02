@@ -8,7 +8,7 @@ import TestCases.testBase;
 import configurations.driverFunction;
 
 public class personalInfo extends personalInfoOR {
-	WebDriver driver;
+	
 	driverFunction driverFunc;
 	addComment ac=new addComment(driver);
 	
@@ -19,8 +19,8 @@ public class personalInfo extends personalInfoOR {
 	
 	public addComment clickPers() {
 		driverFunc.doubleClick(changePi);
+		driverFunc.sleep();
 		return ac;
-	}
-
+		}
 	}
 

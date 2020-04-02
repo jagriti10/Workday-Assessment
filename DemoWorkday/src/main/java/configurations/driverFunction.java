@@ -45,4 +45,11 @@ public class driverFunction {
 	public void addWait() {
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
 	}
+	public void sleep() {
+		try {
+			Thread.sleep(10000);
+		} catch (InterruptedException e) {
+			e.printStackTrace();
+		}
+	}
 }

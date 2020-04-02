@@ -5,8 +5,10 @@ import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
 
+import configurations.driverFunction;
+
 public class rememberDeviceOR {
-	WebDriver driver;
+	public WebDriver driver;
 
 	public rememberDeviceOR(WebDriver driver) {
 		PageFactory.initElements(driver,this);

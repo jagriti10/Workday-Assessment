@@ -10,7 +10,7 @@ import TestCases.testBase;
 import configurations.driverFunction;
 
 public class mainPage extends mainPageOR {
-	WebDriver driver;
+	
 	driverFunction driverFunc;
 	personalInfo pi=new personalInfo(driver);
 
@@ -18,15 +18,15 @@ public class mainPage extends mainPageOR {
 		super(driver);
 		driverFunc=testBase.getdriverFunction(); 
 	}
-	public String fetchHeader() {
-		driverFunc.addWait();
-		return welcomeCard.getText();
-	
-	}
-	
+//	public Boolean verifyUser() {
+//		driverFunc.addWait();
+//		return userName.isDisplayed();
+//	
+//	}
+//	
 	public personalInfo clickPersonalInfo() {
 		driverFunc.doubleClick(piImage);
-		driverFunc.addWait();
+		driverFunc.sleep();
 		return pi;
 	}
 

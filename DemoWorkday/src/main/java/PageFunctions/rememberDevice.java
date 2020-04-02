@@ -8,7 +8,7 @@ import TestCases.testBase;
 import configurations.driverFunction;
 
 public class rememberDevice extends rememberDeviceOR {
-	WebDriver driver;
+	
 	driverFunction driverFunc;
 	mainPage mp=new mainPage(driver);
 	
@@ -18,10 +18,10 @@ public class rememberDevice extends rememberDeviceOR {
 		driverFunc = testBase.getdriverFunction();
 	}
 	
-	public mainPage clickAndsubmit() throws InterruptedException {
+	public mainPage clickAndsubmit(){
 		driverFunc.addWait();
 		driverFunc.click(skip);
-		driverFunc.addWait();
+		driverFunc.sleep();
 		return mp;
 	}
 
