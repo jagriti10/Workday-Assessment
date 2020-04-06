@@ -10,6 +10,7 @@ import TestCases.testBase;
 
 public class signIn extends signInOR{
 	
+	WebDriver driver=null;
 	driverFunction driverFunc;
 	rememberDevice rm=new rememberDevice(driver);
 	

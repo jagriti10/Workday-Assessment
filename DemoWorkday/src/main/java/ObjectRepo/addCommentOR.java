@@ -9,7 +9,7 @@ import configurations.driverFunction;
 
 public class addCommentOR {
 	
-	public WebDriver driver;
+	private WebDriver driver;
 	
 	public addCommentOR(WebDriver driver) {
 	PageFactory.initElements(driver,this);	

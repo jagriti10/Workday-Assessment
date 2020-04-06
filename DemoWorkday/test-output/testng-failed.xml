@@ -5,9 +5,16 @@
     <classes>
       <class name="TestCases.workdayTestCase">
         <methods>
+          <include name="isPersonalInfoClicked"/>
+          <include name="beforeMethod"/>
+          <include name="checkTickAndSubmit"/>
+          <include name="isEmailDisplayed"/>
           <include name="afterTest"/>
           <include name="isCommentAdded"/>
+          <include name="beforeSuite"/>
+          <include name="checkUser"/>
           <include name="beforeTest"/>
+          <include name="afterMethod"/>
         </methods>
       </class> <!-- TestCases.workdayTestCase -->
     </classes>

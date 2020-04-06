@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import configurations.driverFunction;
 
 public class rememberDeviceOR {
-	public WebDriver driver;
+	private WebDriver driver;
 
 	public rememberDeviceOR(WebDriver driver) {
 		PageFactory.initElements(driver,this);
@@ -17,7 +17,7 @@ public class rememberDeviceOR {
 //	@FindBy(id="tdCheckbox")
 //	protected WebElement checkbox;
 	
-	@FindBy(xpath="//button[@data-automation-id='linkButton']")
+	@FindBy(xpath="//button[@class='css-1qgmeaf-ButtonAsLink extbdco0']")
 	protected WebElement skip;
 	
 }

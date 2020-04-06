@@ -8,7 +8,7 @@ import TestCases.testBase;
 import configurations.driverFunction;
 
 public class rememberDevice extends rememberDeviceOR {
-	
+	WebDriver driver=null;
 	driverFunction driverFunc;
 	mainPage mp=new mainPage(driver);
 	

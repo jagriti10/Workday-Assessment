@@ -9,7 +9,7 @@ import configurations.driverFunction;
 
 public class signInOR {
 	
-	public WebDriver driver;
+	private WebDriver driver;
 	driverFunction driverFunc;
 	
 	public signInOR(WebDriver driver) {

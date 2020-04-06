@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 import configurations.driverFunction;
 
 public class personalInfoOR {
-	public WebDriver driver;
+	private WebDriver driver;
 	
 	public personalInfoOR(WebDriver driver) {
 		PageFactory.initElements(driver, this);

@@ -9,7 +9,7 @@ import TestCases.testBase;
 import configurations.driverFunction;
 
 public class addComment extends addCommentOR{
-	
+	WebDriver driver=null;
 	driverFunction driverFunc;
 	
 	public addComment(WebDriver driver) {

@@ -9,7 +9,7 @@ import configurations.driverFunction;
 
 public class mainPageOR {
 	
-	public WebDriver driver;
+	private WebDriver driver;
 	
 	public mainPageOR(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -19,7 +19,7 @@ public class mainPageOR {
 //	protected WebElement userName;
 	
 
-	@FindBy(css="body.WCJ.WF2P.WIVM.WCFP.WNDP.workdayHome-o:nth-child(2) div.WK2P.WI1P.WI5:nth-child(13) div.WJ2P div.WM2P:nth-child(1) section.WG2P:nth-child(2) div.WPYT div.WMYT div.WBFP.WMDP.WOFP.WI5.WJEP.wd-ViewPage div.WEFP.WKEP div.workdayHome-q.workdayHome-ac div.workdayHome-v:nth-child(3) div.workdayHome-ab div.workdayHome-w.workdayHome-z div.workdayHome-am div.css-gnrx50-CardContainer.e1mk4xet0 div.css-17tmhgx-CardContents.e1mk4xet1 div:nth-child(1) div:nth-child(2) ul.workdayHome-x li.workdayHome-ad:nth-child(3) > div.workdayHome-ae")
+	@FindBy(xpath="//body[@class='WCJ WG2P WIVM WDFP WODP workdayHome-o']/div[@id='workdayApplicationFrame']/div[@class='WK2P']/div[@id='mainContent']/section[@class='WH2P']/div[@class='WA-T']/div[@class='WNYT']/div[@id='wd-ViewPage-15$172879']/div[@class='WFFP WLEP']/div[@id='20baed1d70314b6491f21e751fc1d8d5']/div[@class='workdayHome-v']/div[@class='workdayHome-ab']/div[@class='workdayHome-w workdayHome-z']/div[@class='workdayHome-am']/div[@class='css-gnrx50-CardContainer e1mk4xet0']/div[@class='css-17tmhgx-CardContents e1mk4xet1']/div/div/div/ul[@id='wd-home-applets']/li[4]/div[1]")
 	protected WebElement piImage;
 	
 

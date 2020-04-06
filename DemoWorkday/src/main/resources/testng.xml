@@ -9,8 +9,7 @@
 
 	<test name="Workday Test Cases">
 		<classes>
-			<class name="TestCases.workdayTestCase"></class>
-			
+			<class name="TestCases.workdayTestCase"></class>	
 		</classes>
 	</test>
 </suite>

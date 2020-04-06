@@ -1,37 +1,255 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="0" failed="0" skipped="5">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-04-02T14:07:19 IST" name="Default suite" finished-at="2020-04-02T14:08:26 IST" duration-ms="66726">
+  <suite started-at="2020-04-06T07:21:15 IST" name="Default suite" finished-at="2020-04-06T07:21:15 IST" duration-ms="46">
     <groups>
     </groups>
-    <test started-at="2020-04-02T14:07:19 IST" name="Default test" finished-at="2020-04-02T14:08:26 IST" duration-ms="66726">
+    <test started-at="2020-04-06T07:21:15 IST" name="Default test" finished-at="2020-04-06T07:21:15 IST" duration-ms="46">
       <class name="TestCases.workdayTestCase">
-        <test-method is-config="true" signature="beforeTest()[pri:0, instance:TestCases.workdayTestCase@4da4253]" started-at="2020-04-02T14:07:19 IST" name="beforeTest" finished-at="2020-04-02T14:07:31 IST" duration-ms="11476" status="PASS">
+        <test-method is-config="true" signature="beforeSuite()[pri:0, instance:TestCases.workdayTestCase@7690781]" started-at="2020-04-06T07:21:15 IST" name="beforeSuite" finished-at="2020-04-06T07:21:15 IST" duration-ms="47" status="FAIL">
+          <exception class="java.lang.ArrayStoreException">
+            <message>
+              <![CDATA[com.aventstack.extentreports.reporter.ExtentHtmlReporter]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArrayStoreException: com.aventstack.extentreports.reporter.ExtentHtmlReporter
+at TestCases.testBase.beforeSuite(testBase.java:58)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:345)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArrayStoreException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeSuite -->
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:TestCases.workdayTestCase@7690781]" started-at="2020-04-06T07:21:15 IST" name="beforeTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1586137875851" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method signature="isEmailDisplayed()[pri:1, instance:TestCases.workdayTestCase@4da4253]" started-at="2020-04-02T14:07:31 IST" name="isEmailDisplayed" finished-at="2020-04-02T14:07:45 IST" duration-ms="14238" status="PASS">
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestCases.workdayTestCase@7690781]" started-at="2020-04-06T07:21:15 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1586137875872" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="isEmailDisplayed()[pri:1, instance:TestCases.workdayTestCase@7690781]" started-at="2020-04-06T07:21:15 IST" name="isEmailDisplayed" finished-at="2020-04-06T07:21:15 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.ArrayStoreException">
+            <message>
+              <![CDATA[com.aventstack.extentreports.reporter.ExtentHtmlReporter]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArrayStoreException: com.aventstack.extentreports.reporter.ExtentHtmlReporter
+at TestCases.testBase.beforeSuite(testBase.java:58)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:345)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArrayStoreException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isEmailDisplayed -->
-        <test-method signature="checkTickAndSubmit()[pri:2, instance:TestCases.workdayTestCase@4da4253]" started-at="2020-04-02T14:07:45 IST" name="checkTickAndSubmit" finished-at="2020-04-02T14:07:55 IST" duration-ms="10018" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestCases.workdayTestCase@7690781]" started-at="2020-04-06T07:21:15 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1586137875874" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestCases.workdayTestCase@7690781]" started-at="2020-04-06T07:21:15 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1586137875877" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="checkTickAndSubmit()[pri:2, instance:TestCases.workdayTestCase@7690781]" started-at="2020-04-06T07:21:15 IST" name="checkTickAndSubmit" finished-at="2020-04-06T07:21:15 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.ArrayStoreException">
+            <message>
+              <![CDATA[com.aventstack.extentreports.reporter.ExtentHtmlReporter]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArrayStoreException: com.aventstack.extentreports.reporter.ExtentHtmlReporter
+at TestCases.testBase.beforeSuite(testBase.java:58)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:345)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArrayStoreException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkTickAndSubmit -->
-        <test-method signature="checkUser()[pri:3, instance:TestCases.workdayTestCase@4da4253]" started-at="2020-04-02T14:07:55 IST" name="checkUser" finished-at="2020-04-02T14:08:05 IST" duration-ms="10056" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestCases.workdayTestCase@7690781]" started-at="2020-04-06T07:21:15 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1586137875880" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestCases.workdayTestCase@7690781]" started-at="2020-04-06T07:21:15 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1586137875882" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="checkUser()[pri:3, instance:TestCases.workdayTestCase@7690781]" started-at="2020-04-06T07:21:15 IST" name="checkUser" finished-at="2020-04-06T07:21:15 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.ArrayStoreException">
+            <message>
+              <![CDATA[com.aventstack.extentreports.reporter.ExtentHtmlReporter]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArrayStoreException: com.aventstack.extentreports.reporter.ExtentHtmlReporter
+at TestCases.testBase.beforeSuite(testBase.java:58)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:345)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArrayStoreException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- checkUser -->
-        <test-method signature="isPersonalInfoClicked()[pri:4, instance:TestCases.workdayTestCase@4da4253]" started-at="2020-04-02T14:08:05 IST" name="isPersonalInfoClicked" finished-at="2020-04-02T14:08:15 IST" duration-ms="10010" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestCases.workdayTestCase@7690781]" started-at="2020-04-06T07:21:15 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1586137875884" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestCases.workdayTestCase@7690781]" started-at="2020-04-06T07:21:15 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1586137875885" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="isPersonalInfoClicked()[pri:4, instance:TestCases.workdayTestCase@7690781]" started-at="2020-04-06T07:21:15 IST" name="isPersonalInfoClicked" finished-at="2020-04-06T07:21:15 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.ArrayStoreException">
+            <message>
+              <![CDATA[com.aventstack.extentreports.reporter.ExtentHtmlReporter]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArrayStoreException: com.aventstack.extentreports.reporter.ExtentHtmlReporter
+at TestCases.testBase.beforeSuite(testBase.java:58)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:345)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArrayStoreException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isPersonalInfoClicked -->
-        <test-method signature="isCommentAdded()[pri:5, instance:TestCases.workdayTestCase@4da4253]" started-at="2020-04-02T14:08:15 IST" name="isCommentAdded" finished-at="2020-04-02T14:08:25 IST" duration-ms="10013" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestCases.workdayTestCase@7690781]" started-at="2020-04-06T07:21:15 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1586137875889" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="beforeMethod()[pri:0, instance:TestCases.workdayTestCase@7690781]" started-at="2020-04-06T07:21:15 IST" name="beforeMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1586137875890" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method signature="isCommentAdded()[pri:5, instance:TestCases.workdayTestCase@7690781]" started-at="2020-04-06T07:21:15 IST" name="isCommentAdded" finished-at="2020-04-06T07:21:15 IST" duration-ms="0" status="SKIP">
+          <exception class="java.lang.ArrayStoreException">
+            <message>
+              <![CDATA[com.aventstack.extentreports.reporter.ExtentHtmlReporter]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.ArrayStoreException: com.aventstack.extentreports.reporter.ExtentHtmlReporter
+at TestCases.testBase.beforeSuite(testBase.java:58)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:62)
+at org.testng.internal.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:340)
+at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:294)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:345)
+at org.testng.SuiteRunner.run(SuiteRunner.java:304)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1180)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1102)
+at org.testng.TestNG.runSuites(TestNG.java:1032)
+at org.testng.TestNG.run(TestNG.java:1000)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.ArrayStoreException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- isCommentAdded -->
-        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestCases.workdayTestCase@4da4253]" started-at="2020-04-02T14:08:25 IST" name="afterTest" finished-at="2020-04-02T14:08:26 IST" duration-ms="769" status="PASS">
+        <test-method is-config="true" signature="afterMethod()[pri:0, instance:TestCases.workdayTestCase@7690781]" started-at="2020-04-06T07:21:15 IST" name="afterMethod" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1586137875894" status="SKIP">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:TestCases.workdayTestCase@7690781]" started-at="2020-04-06T07:21:15 IST" name="afterTest" finished-at="1970-01-01T05:30:00 IST" duration-ms="-1586137875895" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->

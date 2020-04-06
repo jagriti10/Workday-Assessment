@@ -8,7 +8,7 @@ import TestCases.testBase;
 import configurations.driverFunction;
 
 public class personalInfo extends personalInfoOR {
-	
+	WebDriver driver=null;
 	driverFunction driverFunc;
 	addComment ac=new addComment(driver);
 	
