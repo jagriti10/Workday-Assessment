@@ -2,18 +2,19 @@ package configurations;
 
 import java.io.File;
 import java.io.IOException;
+import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 
-import TestCases.BaseTestCase;
 import TestCases.testBase;
 
 public class driverFunction {
@@ -51,6 +52,7 @@ public class driverFunction {
 			System.out.print(e.getMessage());
 		}
 	}
+	
 
 	public void addWait() {
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
@@ -62,6 +64,18 @@ public class driverFunction {
 			e.printStackTrace();
 		}
 	}
+	
+	public void exeClick(WebElement ele ) {
+		JavascriptExecutor executor = (JavascriptExecutor)driver;
+		executor.executeScript("arguments[0].click();", ele);	
+	}
+	
+	public static String currentDate() {
+		DateFormat dateFormat = new SimpleDateFormat("MM_dd_yyyy_HH_mm_ss");
+		Date date =new Date();
+		return dateFormat.format(date);
+	}
+	
 	public String captureScreenshot(WebDriver driver) {
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String fileName = "";
@@ -70,10 +84,7 @@ public class driverFunction {
 			SimpleDateFormat dateFormat = new SimpleDateFormat("dd-MM-yyyy_HH_mm_ss");
 			String stringDate = dateFormat.format(new Date());
 			String saveLocation =testBase.reportPath + ".png";
-			fileName =
-					saveLocation.replace(
-							System.getProperty("user.dir") + File.separator + File.separator,
-							"");
+			fileName =saveLocation.replace(System.getProperty("user.dir") + File.separator + File.separator,"");
 			FileUtils.copyFile(src, new File(saveLocation));
 
 		} catch (IOException e) {

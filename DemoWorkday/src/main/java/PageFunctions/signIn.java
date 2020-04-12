@@ -12,7 +12,6 @@ public class signIn extends signInOR{
 	
 	WebDriver driver=null;
 	driverFunction driverFunc;
-	rememberDevice rm=new rememberDevice(driver);
 	
 	public signIn(WebDriver driver) {
 	
@@ -30,7 +29,7 @@ public class signIn extends signInOR{
 		driverFunc.addWait();
 		driverFunc.click(next2);
 		driverFunc.sleep();
-	    return rm;
+	    return new rememberDevice(driver);
 	}
 	 
 	

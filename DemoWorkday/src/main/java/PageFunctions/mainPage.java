@@ -14,7 +14,6 @@ import configurations.driverFunction;
 public class mainPage extends mainPageOR {
 	WebDriver driver=null;
 	driverFunction driverFunc;
-	personalInfo pi=new personalInfo(driver);
 
 	public mainPage(WebDriver driver) {
 		super(driver);
@@ -29,7 +28,7 @@ public class mainPage extends mainPageOR {
 	public personalInfo clickPersonalInfo() throws InvocationTargetException {
 		driverFunc.doubleClick(piImage);
 		driverFunc.sleep();
-		return pi;
+		return new personalInfo(driver);
 	}
 
 	

@@ -10,7 +10,7 @@ import configurations.driverFunction;
 public class personalInfo extends personalInfoOR {
 	WebDriver driver=null;
 	driverFunction driverFunc;
-	addComment ac=new addComment(driver);
+	
 	
 	public personalInfo(WebDriver driver) {
 		super(driver);
@@ -20,7 +20,7 @@ public class personalInfo extends personalInfoOR {
 	public addComment clickPers() {
 		driverFunc.doubleClick(changePi);
 		driverFunc.sleep();
-		return ac;
+		return new addComment(driver);
 		}
 	}
 

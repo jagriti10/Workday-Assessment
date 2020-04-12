@@ -9,8 +9,13 @@
       <class name="TestCases.workdayTestCase">
         <methods>
           <include name="isPersonalInfoClicked"/>
+          <include name="beforeMethod"/>
+          <include name="getResult"/>
+          <include name="checkTickAndSubmit"/>
+          <include name="isEmailDisplayed"/>
           <include name="afterTest"/>
           <include name="isCommentAdded"/>
+          <include name="beforeSuite"/>
           <include name="checkUser"/>
           <include name="beforeTest"/>
         </methods>

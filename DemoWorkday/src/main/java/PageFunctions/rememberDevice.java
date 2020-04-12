@@ -10,8 +10,6 @@ import configurations.driverFunction;
 public class rememberDevice extends rememberDeviceOR {
 	WebDriver driver=null;
 	driverFunction driverFunc;
-	mainPage mp=new mainPage(driver);
-	
 	
 	public rememberDevice(WebDriver driver) {
 		super(driver);
@@ -22,7 +20,7 @@ public class rememberDevice extends rememberDeviceOR {
 		driverFunc.addWait();
 		driverFunc.click(skip);
 		driverFunc.sleep();
-		return mp;
+		return new mainPage(driver);
 	}
 
 	

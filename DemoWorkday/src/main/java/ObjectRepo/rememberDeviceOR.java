@@ -17,7 +17,7 @@ public class rememberDeviceOR {
 //	@FindBy(id="tdCheckbox")
 //	protected WebElement checkbox;
 	
-	@FindBy(xpath="//button[@class='css-1qgmeaf-ButtonAsLink extbdco0']")
+	@FindBy(xpath="//button[@class='css-1o8kyg5-ButtonAsLink extbdco0']")
 	protected WebElement skip;
 	
 }
