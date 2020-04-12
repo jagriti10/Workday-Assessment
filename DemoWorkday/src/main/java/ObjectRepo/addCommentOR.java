@@ -9,8 +9,6 @@ import configurations.driverFunction;
 
 public class addCommentOR {
 	
-	private WebDriver driver;
-	
 	public addCommentOR(WebDriver driver) {
 	PageFactory.initElements(driver,this);	
 	}

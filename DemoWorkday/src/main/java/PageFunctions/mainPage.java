@@ -3,9 +3,6 @@ package PageFunctions;
 import java.lang.reflect.InvocationTargetException;
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.WebElement;
-import org.openqa.selenium.support.PageFactory;
-import org.testng.Assert;
 
 import ObjectRepo.mainPageOR;
 import TestCases.testBase;
@@ -19,12 +16,18 @@ public class mainPage extends mainPageOR {
 		super(driver);
 		driverFunc=testBase.getdriverFunction(); 
 	}
-//	public Boolean verifyUser() {
-//		driverFunc.addWait();
-//		return userName.isDisplayed();
-//	
-//	}
-//	
+	public Boolean verifyUser() {
+		driverFunc.addWait();
+		String user =driverFunc.exeText();
+		if(user=="Welcome, Jagriti Sharma (41785JS)") {
+			System.out.print(user);
+			return true;
+		}
+		else
+			return false;
+	
+	}
+
 	public personalInfo clickPersonalInfo() throws InvocationTargetException {
 		driverFunc.doubleClick(piImage);
 		driverFunc.sleep();

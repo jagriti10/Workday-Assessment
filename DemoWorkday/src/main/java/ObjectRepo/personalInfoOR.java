@@ -8,7 +8,6 @@ import org.openqa.selenium.support.PageFactory;
 import configurations.driverFunction;
 
 public class personalInfoOR {
-	private WebDriver driver;
 	
 	public personalInfoOR(WebDriver driver) {
 		PageFactory.initElements(driver, this);
@@ -16,7 +15,5 @@ public class personalInfoOR {
 	
 	@FindBy(xpath="//a[@id='2997$4586']")
 	protected WebElement changePi;
-
-	
 
 }

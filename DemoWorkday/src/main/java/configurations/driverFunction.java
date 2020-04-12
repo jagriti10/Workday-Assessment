@@ -8,6 +8,7 @@ import java.util.Date;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.io.FileUtils;
+import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
@@ -43,6 +44,7 @@ public class driverFunction {
 		}
 	}
 
+
 	public void doubleClick(WebElement ele) {
 		try {
 			Actions action = new Actions(driver).doubleClick(ele);
@@ -52,7 +54,7 @@ public class driverFunction {
 			System.out.print(e.getMessage());
 		}
 	}
-	
+
 
 	public void addWait() {
 		driver.manage().timeouts().implicitlyWait(15, TimeUnit.SECONDS);
@@ -64,18 +66,27 @@ public class driverFunction {
 			e.printStackTrace();
 		}
 	}
-	
+
 	public void exeClick(WebElement ele ) {
 		JavascriptExecutor executor = (JavascriptExecutor)driver;
 		executor.executeScript("arguments[0].click();", ele);	
 	}
+
+	public String exeText() {
+		WebElement user=driver.findElement(By.xpath("//h1[@class='workdayHome-j']"));
+		JavascriptExecutor js = (JavascriptExecutor) driver; 
+		String text = (String) js.executeScript("return arguments[0].text;",user);
+		System.out.println(text);
+		return text;
+	}
 	
-	public static String currentDate() {
+
+	public String currentDate() {
 		DateFormat dateFormat = new SimpleDateFormat("MM_dd_yyyy_HH_mm_ss");
 		Date date =new Date();
 		return dateFormat.format(date);
 	}
-	
+
 	public String captureScreenshot(WebDriver driver) {
 		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
 		String fileName = "";

@@ -9,7 +9,6 @@ import configurations.driverFunction;
 
 public class signInOR {
 	
-	private WebDriver driver;
 	driverFunction driverFunc;
 	
 	public signInOR(WebDriver driver) {
@@ -22,10 +21,10 @@ public class signInOR {
 	@FindBy(id="next")
 	protected WebElement next1;
 	
-	@FindBy(id="Passwd")
+	@FindBy(id="password")
 	protected WebElement passwd;
 	
-	@FindBy(id="signIn")
+	@FindBy(id="submit")
 	protected WebElement next2;
 	
 }
