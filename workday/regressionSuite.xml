@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<suite name="regression Suite">
+	<listeners>
+		<listener
+			class-name="automation.workday.workday.helper.listener.ExtentListener">
+		</listener>
+	</listeners>
+	<test name="First Test">
+		<classes>
+			<class name="packagename.testclassfilename" />
+		</classes>
+	</test>
+	<test name="second Test">
+		<classes>
+			<class name>
+			</class>
+		</classes>
+
+	</test>
+</suite>
